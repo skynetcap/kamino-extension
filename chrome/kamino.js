@@ -1,4 +1,4 @@
-let pattern = "https://pro.ip-api.com/*";
+let pattern = "https://sentinel.kamino.finance/*";
 
 function redirect(requestDetails) {
     return {

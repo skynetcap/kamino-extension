@@ -7,7 +7,7 @@
     "webRequest",
     "webRequestBlocking",
 	"https://app.kamino.finance/*",
-    "https://pro.ip-api.com/*"
+    "https://sentinel.kamino.finance/*"
   ],
   "background": {
     "scripts": [
