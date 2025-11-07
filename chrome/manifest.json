@@ -1,18 +1,21 @@
 {
   "name": "Kamino Finance Access Extension",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Access Kamino Finance from a geo-blocked region.",
-  "manifest_version": 2,
-  "permissions": [
-    "webRequest",
-    "webRequestBlocking",
-	"https://app.kamino.finance/*",
+  "manifest_version": 3,
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": [
+    "https://app.kamino.finance/*",
+    "https://kamino.com/*",
     "https://sentinel.kamino.finance/*"
   ],
-  "background": {
-    "scripts": [
-      "kamino.js"
-    ],
-    "persistent": true
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "rules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
   }
 }
